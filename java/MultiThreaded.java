@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.*;
 
-public class FindCheapest {
+public class MultiThreaded {
 
     private static final int NUM_THREADS = Runtime.getRuntime().availableProcessors();
 
