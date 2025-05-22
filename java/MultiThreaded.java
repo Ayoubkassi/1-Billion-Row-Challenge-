@@ -14,7 +14,7 @@ public class MultiThreaded {
         Map<String, Double> cityPrices = new ConcurrentHashMap<>();
         Map<String, Double> productPrices = new ConcurrentHashMap<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader("data.csv"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("../one_million_data.csv"))) {
             List<String> lines = new ArrayList<>();
             String line;
             while ((line = br.readLine()) != null) {
