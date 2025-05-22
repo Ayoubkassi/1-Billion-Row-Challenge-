@@ -38,24 +38,28 @@ var products = []string{
 func main() {
 	rand.Seed(time.Now().UnixNano())
 
-	file, err := os.Create("final_data.csv")
+	file, err := os.Create("one_million_data.csv")
 	if err != nil {
-		fmt.Println("Error while create file:", err)
+		fmt.Println("Error while creating file:", err)
 		return
 	}
 	defer file.Close()
 
-	const numRows = 1_000_000_000
+	const numRows = 1_000_000
+	numCityProductCombinations := len(cities) * len(products)
+	rowsPerCombination := numRows / numCityProductCombinations
 
-	for i := 0; i < numRows; i++ {
-		city := cities[rand.Intn(len(cities))]
-		product := products[rand.Intn(len(products))]
-		price := fmt.Sprintf("%.2f", rand.Float64()*9.9+0.1) 
-		line := fmt.Sprintf("%s,%s,%s\n", city, product, price)
-		_, err := file.WriteString(line)
-		if err != nil {
-			fmt.Println("Error while write into file:", err)
-			return
+	for i := 0; i < rowsPerCombination; i++ {
+		for _, city := range cities {
+			for _, product := range products {
+				price := fmt.Sprintf("%.2f", rand.Float64()*9.9+0.1)
+				line := fmt.Sprintf("%s,%s,%s\n", city, product, price)
+				_, err := file.WriteString(line)
+				if err != nil {
+					fmt.Println("Error while writing into file:", err)
+					return
+				}
+			}
 		}
 	}
 
