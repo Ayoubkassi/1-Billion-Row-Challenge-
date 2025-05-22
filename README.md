@@ -49,48 +49,47 @@ C’est le moment idéal pour prouver que votre langage préféré est le plus r
 
 ## 📁 Exemple de Format de Données
 
-**✅ INPUT :**
+✅ INPUT :
 
-Paris,tomato,6.23
-Paris,tomato,7.23
-Paris,tomato,8.23
-Paris,tomato,9.23
-Paris,potato,4.21
-Paris,flour,6.24
-Paris,oil,9.24
-Paris,oil,9.94
-Paris,oil,8.24
-Paris,sugar,5.23
-Paris,sugar,5.23
-Paris,sugar,5.23
-Paris,gaz,9.25
-Lyon,tomato,4.5
-Lyon,tomato,3.5
-Lyon,potato,3.5
-Lyon,flour,5.2
-Lyon,oil,7.7
-Lyon,oil,6.7
-Lyon,sugar,4.5
-Lyon,gaz,9.3
-Lyon,gaz,2.3
-Lyon,gaz,1.3
-Marseille,tomato,5.85
-Marseille,tomato,9.85
-Marseille,potato,4.65
-Marseille,flour,5.65
-Marseille,oil,8.15
-Marseille,oil,9.15
-Marseille,oil,7.15
-Marseille,sugar,9.05
-Marseille,sugar,9.15
-Marseille,gaz,9.45
+Paris,tomato,6.23  
+Paris,tomato,7.23  
+Paris,tomato,8.23  
+Paris,tomato,9.23  
+Paris,potato,4.21  
+Paris,flour,6.24  
+Paris,oil,9.24  
+Paris,oil,9.94  
+Paris,oil,8.24  
+Paris,sugar,5.23  
+Paris,sugar,5.23  
+Paris,sugar,5.23  
+Paris,gaz,9.25  
+Lyon,tomato,4.5  
+Lyon,tomato,3.5  
+Lyon,potato,3.5  
+Lyon,flour,5.2  
+Lyon,oil,7.7  
+Lyon,oil,6.7  
+Lyon,sugar,4.5  
+Lyon,gaz,9.3  
+Lyon,gaz,2.3  
+Lyon,gaz,1.3  
+Marseille,tomato,5.85  
+Marseille,tomato,9.85  
+Marseille,potato,4.65  
+Marseille,flour,5.65  
+Marseille,oil,8.15  
+Marseille,oil,9.15  
+Marseille,oil,7.15  
+Marseille,sugar,9.05  
+Marseille,sugar,9.15  
+Marseille,gaz,9.45  
 
+✅ OUTPUT :
 
-**✅ OUTPUT :**
-
-Lyon 48.50
-gaz 1.30
-potato 3.50
-tomato 3.50
-sugar 4.50
-flour 5.20
+Lyon 48.50  
+gaz 1.30  
+potato 3.50  
+tomato 3.50  
+sugar 4.50  
+flour 5.20  
